@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shape Match Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Shape Match Game</h1>
+        <div id="levelTitle"></div>
+
+        <!-- Game board -->
+        <div id="shapes" class="shapes"></div>
+
+        <!-- Placeholder board for matching -->
+        <div id="matchArea" class="match-area"></div>
+
+        <!-- Congratulations Popup -->
+        <div id="congratsPopup" class="popup">
+            <div class="popup-content">
+                <h2>Congratulations! You matched all the shapes.</h2>
+                <button onclick="nextLevel()">Next Level</button>
+            </div>
+        </div>
+
+        <!-- Home Button -->
+        <button onclick="goHome()" class="home-btn">Home</button>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
